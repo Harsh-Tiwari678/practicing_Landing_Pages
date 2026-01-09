@@ -1,0 +1,29 @@
+body{
+    background-color: #0e0e0e;
+}
+.toplink{
+    color: grey;
+    cursor: pointer;
+    padding-left: 25px; /*  apne left mein sabne push mara aur right mein hogaye creates space */
+    align-items: center;
+}
+.versionline{
+    color: grey;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.Version{
+     margin-right:10px;
+}
+.sentence{
+    color: grey;
+    border-style: solid;
+    border-radius: 19px;
+}
+.button{
+   background-color:#007acc;
+   color: white;
+  font-size: 16px;
+    font-weight: 600;padding: 10px 20px;
+}

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;  /*boiler plate code*/     
+ 
+}
+              
+
+#main{
+    width: 100%;  /* no height given bcs we dont know yet how long will the project or the website will go */
+}
+#hero{
+    width: 100%;
+    height: 100vh;  /* screen ke bhar na nikle exactly of screen size */
+    background-color: black;
+    color: white;
+}
+#nav{
+    width: 100%;
+    padding: 30px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav a{
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+}
+#heading{
+    margin-top: 50px;
+}
+#heading h1{
+    font-size: 10vw;
+    text-transform: uppercase;
+     font-weight: 450; 
+     line-height: 1;   /* so it can reduce the extra line height  */
+     opacity: .6;
+     margin-left: 30px;
+    
+}
+ #heading #heading2{
+    margin-left: 208px;
+}
+.blocktext{
+    width: fit-content;     /* it will take the width of the content inside it */
+}
+.blocktext h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;    
+}
+#smallheadings{
+    margin-top: 120px;
+    padding-right: 30px;
+}
+#smallheadings h5{
+     text-transform: uppercase;
+     font-size: 2.5vh;
+     margin-top: .5vw;
+     text-align: right;
+}

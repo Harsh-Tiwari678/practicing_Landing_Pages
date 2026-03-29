@@ -1,3 +1,3 @@
-<H1> Practicing  LANDING PAGE </H1>
-<H2> Just to revise my html and css knowledge 
+<H1> Practicing Frontend </H1>
+<H2> Just to get a Strong hold on my frontend knowledge 
   and leaning via making projects and making advance level frontend</H2>

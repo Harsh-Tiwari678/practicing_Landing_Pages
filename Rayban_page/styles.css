@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;  /*boiler plate code*/     
+ 
+}
+#main{
+    width: 100%;
+    height: 100vh; /* screen ke bhar na nikle exactly of screen size */
+    background-color: black;
+}
+#back{
+    width:100%;
+    height:100vh;
+}
+#top{
+    position: absolute;
+     top: 0; /* it will start from the top of the page */
+     left: 0; /* it will start from the left of the page */
+    width:100%;
+    height:100vh;
+    background-color: black;
+}
+#WorkingArea{
+width: 80%;
+height: 100vh;
+max-width: 1920px;
+background-color: #888;
+}

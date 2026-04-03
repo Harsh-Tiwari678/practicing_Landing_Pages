@@ -26,8 +26,55 @@ html,body{
     background-color: black;
 }
 #WorkingArea{
+position: relative;
+margin: 0 auto; /* it will center the div horizontally */
 width: 80%;
 height: 100vh;
 max-width: 1920px;
-background-color: #888;
+
 }
+#navbar{
+    width:100%;  /* it will take the full width of the parent div (WorkingArea) */
+    padding: 40px 0;
+    display: flex;/* it will make the div a flex container */
+    align-items : center; /* it will align the items vertically in the center */
+    justify-content: space-between; /* it will give space between the items */
+}
+#navbar img{
+    height: 60px; /* it will set the height of the logo */
+}
+#n-left, #n-right{
+    display: flex;
+    align-items: center;
+    gap: 60px; /* it will give a gap of 40px between the logo and the links */
+}
+#navbar a{
+    color: #fff;
+   font-family: "gilroy";
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 600;
+}
+#hero{
+    display: flex;
+    position: absolute;
+    top:50%;
+    left:0;
+    justify-content: space-between;  
+    width: 100%;
+   
+    transform: translate(0%, -50%); /* it will move the div up by 50% of its height (50px) and it will not move horizontally (0%) */
+}
+#h-left{
+    min-width: 50%;
+   
+    background-color: yellow;
+}
+#h-right{
+    min-width: 25%; 
+  
+    background-color: green;
+}
+
+

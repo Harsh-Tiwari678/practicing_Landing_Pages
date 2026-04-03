@@ -1,7 +1,12 @@
+@font-face {
+  font-family: "Kajiro";
+  src: url("Kajiro.ttf") format("truetype");
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "gilroy";
 }
 html,body{
     height: 100%;
@@ -11,19 +16,25 @@ html,body{
 #main{
     width: 100%;
     height: 100vh; /* screen ke bhar na nikle exactly of screen size */
-    background-color: black;
 }
 #back{
     width:100%;
     height:100vh;
 }
+#back img{
+    width: 100%; /*images ouri width and heigh le */
+    height: 100vh;
+    object-fit: cover; /* it will make the image cover the entire div without distorting it */
+     z-index: 1; /* it will make sure that the back div is below the top div */
+}
 #top{
+    pointer-events: none;
     position: absolute;
      top: 0; /* it will start from the top of the page */
      left: 0; /* it will start from the left of the page */
     width:100%;
     height:100vh;
-    background-color: black;
+     z-index: 10; /* it will make sure that the top div is above the back div */
 }
 #WorkingArea{
 position: relative;
@@ -39,6 +50,7 @@ max-width: 1920px;
     display: flex;/* it will make the div a flex container */
     align-items : center; /* it will align the items vertically in the center */
     justify-content: space-between; /* it will give space between the items */
+    pointer-events: all; /* it will allow the user to interact with the navbar */
 }
 #navbar img{
     height: 60px; /* it will set the height of the logo */
@@ -50,7 +62,6 @@ max-width: 1920px;
 }
 #navbar a{
     color: #fff;
-   font-family: "gilroy";
    text-decoration: none;
    text-transform: uppercase;
    font-size: 12px;
@@ -64,17 +75,52 @@ max-width: 1920px;
     justify-content: space-between;  
     width: 100%;
    
-    transform: translate(0%, -50%); /* it will move the div up by 50% of its height (50px) and it will not move horizontally (0%) */
+    transform: translate(0%, -40%); /* it will move the div up by 50% of its height (50px) and it will not move horizontally (0%) */
 }
 #h-left{
-    min-width: 50%;
-   
-    background-color: yellow;
+    min-width: 50%; /* it will take at least 50% of the width of the parent div (hero) and it will grow if there is more space available */
 }
 #h-right{
-    min-width: 25%; 
-  
-    background-color: green;
-}
+    width: 17%; 
+    color: #fff;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
 
+}
+#h-left #elem h1{
+    font-family: "kajiro";
+    line-height: 0.9; /* it will reduce the line height to 0.9, which will make the letters closer to each other */
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw; /* it will set the font size to 9% of the viewport width */ 
+}
+#hero #elem{
+height:9vw;
+overflow : hidden;
+} 
+#h-left button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    font-family: "kajiro";
+    margin-top: 2vw;
+}
+#h-right p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+ #image-div{
+    width: 100%;
+    height: 170px;
+   background-image: url(https://images.unsplash.com/photo-1570158268183-d296b2892211?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover; /* it will make the image cover the entire div */
+    background-position: center; /* it will center the image in the div */
+    margin-top: 20px;/* it will give a margin of 20px between the first paragraph and the image */
+    margin-bottom: 30px;/* it will give a margin of 30px between the image and the second paragraph */
+}
+#h-right p:nth-child(3){/* it will select the third paragraph in the h-right div */
+    margin-bottom: 100px;/* it will give a margin of 100px between the second paragraph and the button */
+}
 

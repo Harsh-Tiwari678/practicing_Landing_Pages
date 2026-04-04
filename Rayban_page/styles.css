@@ -2,6 +2,12 @@
   font-family: "Kajiro";
   src: url("Kajiro.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-ExtraBold.otf") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
@@ -74,7 +80,6 @@ max-width: 1920px;
     left:0;
     justify-content: space-between;  
     width: 100%;
-   
     transform: translate(0%, -40%); /* it will move the div up by 50% of its height (50px) and it will not move horizontally (0%) */
 }
 #h-left{
@@ -93,9 +98,16 @@ max-width: 1920px;
     line-height: 0.9; /* it will reduce the line height to 0.9, which will make the letters closer to each other */
     color: #fff;
     font-weight: 100;
-    font-size: 11vw; /* it will set the font size to 9% of the viewport width */ 
+    font-size: 10vw; /* it will set the font size to 9% of the viewport width */ 
+    position: absolute;
+    top: 100%; /* it will start from the bottom of the parent div (elem) */
+    left: 0;
+}
+#h-left #elem :nth-child(1){
+    top: 0%;
 }
 #hero #elem{
+position: relative;
 height:9vw;
 overflow : hidden;
 } 
